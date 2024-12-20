@@ -28,19 +28,60 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 **Procedure**
 
-/* write all the steps invloved */
+/*
+1.Understand the Inputs and Outputs:
+Inputs: clk (clock) and rst (reset).
+Output: out is a 4-bit register that holds the counter value.
+Define Counter Logic:
+
+2.On each rising edge of the clock (posedge clk), check if rst (reset) is active.
+If rst is high, reset out to 0.
+Otherwise, increment out by 1.
+Write and Save the Verilog Code:
+
+3.Create a new Verilog file.
+Write the code provided above to implement the counter.
+Simulate the Design:
+
+4.Create a testbench to provide the clk and rst signals.
+Observe the counter behavior during simulation to ensure it increments and resets correctly.
+Verify the Functionality:
+
+5.Confirm that the counter increments from 0 to 15 and resets to 0 when rst is activated. */
 
 **PROGRAM**
 
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+module ex11(out,clk,rst);
+input clk,rst;
+output reg [3:0]out;
+always @ (posedge clk)
+begin
+   if(rst)
+     out<=0;
+   else 
+     out <= out+1;
+end
+endmodule
 
-Developed by: RegisterNumber:
+
+Developed by:AMAN SINGH
+RegisterNumber: 24900215
 */
 
 **RTL LOGIC UP COUNTER**
+![Screenshot (1757)](https://github.com/user-attachments/assets/c3a75415-16fd-4e31-a1ef-4dd412b2ca73)
+
 
 **TIMING DIAGRAM FOR IP COUNTER**
+![Screenshot (1758)](https://github.com/user-attachments/assets/03344b4a-5921-4060-9504-302c23611d8b)
+
 
 **TRUTH TABLE**
+![image](https://github.com/user-attachments/assets/49415d55-b577-4d09-ba3a-7985edd2f8c7)
+
+
 
 **RESULTS**
+
+Thus 4 bit synchronous up counter was implemented successfully and its functionality validated.
