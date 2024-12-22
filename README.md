@@ -74,7 +74,7 @@ RegisterNumber: 24900215
 
 
 **TIMING DIAGRAM FOR IP COUNTER**
-![Screenshot (1758)](https://github.com/user-attachments/assets/03344b4a-5921-4060-9504-302c23611d8b)
+![WhatsApp Image 2024-12-23 at 01 27 44 (1)](https://github.com/user-attachments/assets/9a097822-3ff4-419e-bf67-7e58093bdfd4)
 
 
 **TRUTH TABLE**
